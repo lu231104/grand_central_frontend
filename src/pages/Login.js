@@ -21,7 +21,7 @@ function Login() {
         "usuarioActual",
         JSON.stringify({ nombre: "Admin", correo, rol: "admin" })
       );
-      window.location.href = "/admin";
+      window.location.href = "/api/admin";
       return;
     }
 
