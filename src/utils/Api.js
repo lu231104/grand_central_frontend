@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Cliente Axios base
 const api = axios.create({
-  baseURL: "http://localhost:8080/api", // tu backend Spring Boot
+  baseURL: "https://grand-central-frontend.onrender.com/", // tu backend Spring Boot
   headers: {
     "Content-Type": "application/json",
   },
