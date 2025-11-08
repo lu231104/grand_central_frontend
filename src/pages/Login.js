@@ -21,7 +21,7 @@ function Login() {
         "usuarioActual",
         JSON.stringify({ nombre: "Admin", correo, rol: "admin" })
       );
-      window.location.href = "/api/admin";
+      navigate("/profile");
       return;
     }
 
@@ -43,7 +43,7 @@ function Login() {
         JSON.stringify({ correo, rol: "usuario" })
       );
 
-      window.location.href = "/profile";
+      navigate("/profile");
     } catch (error) {
       console.error(error);
       Swal.fire({
